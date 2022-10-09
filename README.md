@@ -77,6 +77,32 @@ sudo bash installer.sh
 </p>
 </details>
 
+<details><summary>Run Docker-compose.yml</summary>
+<p>
+
+#### Run Docker images.
+  - Portainer
+  - Nginx
+  - Homer
+  - Grafana
+  - Prometheus
+  - Speedtest
+  - Qbittorrent
+  - Jackett
+  - Radarr
+  - Sonarr
+  - Filebrowser
+  - VSCode
+  - Matomo
+  - Wireguard
+  - MariaDB
+  - Node_exporter
+  - Cadvisor
+  - Cloudflare-ddns
+  - Watchtower
+
+</p>
+</details>
 
 <details><summary>Warning</summary>
 <p>
