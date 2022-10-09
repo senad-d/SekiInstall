@@ -80,7 +80,7 @@ sudo bash installer.sh
 <details><summary>Run Docker-compose.yml</summary>
 <p>
 
-#### Run Docker images.
+#### Run Docker images. (Start with Basic install first.)
   - Portainer
   - Nginx
   - Homer
