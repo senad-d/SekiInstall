@@ -26,3 +26,23 @@ FULL Install
   - Plex
   - Openvpn
 --------------------------------------
+DOCKER CONTAINERS
+  - Portainer
+  - Nginx
+  - Homer
+  - Grafana
+  - Prometheus
+  - Speedtest
+  - Qbittorrent
+  - Jackett
+  - Radarr
+  - Sonarr
+  - Filebrowser
+  - VSCode
+  - Matomo
+  - Wireguard
+  - MariaDB
+  - Node_exporter
+  - Cadvisor
+  - Cloudflare-ddns
+  - Watchtower

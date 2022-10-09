@@ -30,7 +30,7 @@ ufw allow 39010 #Sonarr
 ufw allow 39011 #Filebrowser
 ufw allow 39012 #VSCode
 ufw allow 39013 #Matomo
-ufw allow 51820 #wireguard
+ufw allow 51820 #Wireguard
 
 cat <<EOF > /home/"${SUDO_USER:-$USER}"/docker/.env
 USER="${USER}"

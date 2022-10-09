@@ -57,6 +57,17 @@ Yes | No --> " yn
           esac
 done }
 
+# Run docker container's
+fn_docker_comp() { echo; 
+while true; do
+        read -r -p "Do you wish run docker-compose.yml? (You need Docker and Docker-compose installed to run this!) 
+Yes | No --> " yn
+        case $yn in
+            [Yy]* ) bash ./docker_config/docker-compose.sh; break;;
+            [Nn]* ) clear; sub2-submenu;;
+            * ) echo "Please answer yes or no.";;
+          esac
+done }
 ### Program Function #######################################
 
 # Crontask autotask
@@ -227,8 +238,9 @@ $(yellowprint "$SPLIT")
 $(greenprint '1)') Basic
 $(greenprint '2)') Simple
 $(greenprint '3)') Full
-$(blueprint '4)') Back
-$(magentaprint '5)') MAIN MENU
+$(greenprint '4)') Docker-compose
+$(blueprint '5)') Back
+$(magentaprint '6)') MAIN MENU
 $(redprint '0)') Exit
 $(yellowprint "$SPLIT")
 Choose an option:  "
@@ -251,9 +263,14 @@ Choose an option:  "
         ;;
     4)
         clear;
-        submenu
+        fn_docker_comp
+        mainmenu
         ;;
     5)
+        clear;
+        submenu
+        ;;
+    6)
         clear;
         mainmenu
         ;;
