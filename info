@@ -1,0 +1,28 @@
+--------------------------------------
+SIMPLE Install
+  - Nano
+  - Btop
+  - Cron
+  - Docker
+--------------------------------------
+BASIC Install
+  - Nano
+  - Btop
+  - Cron
+  - Docker
+  - Crowdsec
+  - Cockpit
+  - UFW
+--------------------------------------
+FULL Install
+  - Nano
+  - Btop
+  - Cron
+  - Docker
+  - Crowdsec
+  - Cockpit
+  - UFW
+  - Samba
+  - Plex
+  - Openvpn
+--------------------------------------
