@@ -158,7 +158,7 @@ services:
     networks:
       - proxy
 
-# Update all Docker containers
+# Update Docker containers
   watchtower:
     image: containrrr/watchtower
     container_name: watchtower
