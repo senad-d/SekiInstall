@@ -21,7 +21,6 @@ mkdir -p /home/"${SUDO_USER:-$USER}"/docker/nginx/{mysql,data,letsencrypt}
 mkdir -p /home/"${SUDO_USER:-$USER}"/docker/Video/{Filmovi,Crtani,Anime,Serije,Anime-serije}
 
 # Allow ports
-ufw allow 22    #SSH
 ufw allow 5001 #Portainer
 ufw allow 5002 #Nginx
 ufw allow 5003 #Homer
@@ -87,7 +86,7 @@ docker network create proxy
 # Run Docker images
 cp ./docker_config/homer_config.yml /home/"${SUDO_USER:-$USER}"/docker/homer/config.yml
 cp ./docker_config/docker-compose.yml /home/"${SUDO_USER:-$USER}"/docker/docker-compose.yml
-#setfacl -m "u:root:rw" /home/"${SUDO_USER:-$USER}"/docker/.env
+chmod +rwx /home/"${SUDO_USER:-$USER}"/docker/.env
 docker-compose -f /home/"${SUDO_USER:-$USER}"/docker/docker-compose.yml --env-file /home/"${SUDO_USER:-$USER}"/docker/.env up -d
 
 # Clean up
