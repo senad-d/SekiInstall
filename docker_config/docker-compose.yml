@@ -13,7 +13,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./portainer-data:/data
     ports:
-      - 9001:9000
+      - 5001:9000
     restart: unless-stopped
     networks:
       - proxy
@@ -42,7 +42,7 @@ services:
     env_file: .env
     ports:
       - 80:80
-      - 19002:81
+      - 5002:81
       - 443:443
     volumes:
       - ./nginx/data:/data
@@ -66,7 +66,7 @@ services:
     image: b4bz/homer
     container_name: homer
     ports:
-      - 39003:8080
+      - 5003:8080
     restart: unless-stopped
     env_file: .env
     environment:
@@ -85,7 +85,7 @@ services:
     image: grafana/grafana-oss:latest
     container_name: grafana
     ports:
-      - 19004:3000
+      - 5004:3000
     volumes:
       - grafana-data:/var/lib/grafana
     restart: unless-stopped
@@ -96,7 +96,7 @@ services:
     image: prom/prometheus:latest
     container_name: prometheus
     ports:
-      - 19005:9090
+      - 5005:9090
     volumes:
       - ./prometheus:/etc/prometheus
       - prometheus-data:/prometheus
@@ -138,7 +138,7 @@ services:
     image: openspeedtest/latest:latest
     container_name: openspeedtest
     ports:
-      - 19006:3000
+      - 5006:3000
     restart: unless-stopped
     networks:
       - proxy
@@ -175,7 +175,7 @@ services:
     container_name: qbittorrent
     env_file: .env
     ports:
-       - 19007:8080
+       - 5007:8080
     environment:
        - PUID=${PUID}
        - PGID=${PGID}
@@ -200,7 +200,7 @@ services:
       - ./Jackett:/config
       - ./Downloads:/downloads
     ports:
-      - 19008:9117
+      - 5008:9117
     restart: unless-stopped
     networks:
       - proxy
@@ -220,7 +220,7 @@ services:
       - ./Video/Anime/Filmovi:/anime
       - ./Downloads:/downloads
     ports:
-      - 19009:7878
+      - 5009:7878
     restart: unless-stopped
     networks:
       - proxy
@@ -239,7 +239,7 @@ services:
       - ./Video/Anime-serije:/animetv
       - ./Downloads:/downloads
     ports:
-      - 9010:8989
+      - 5010:8989
     restart: unless-stopped
     networks:
       - proxy
@@ -250,7 +250,7 @@ services:
     container_name: filebrowser
     user: "${UID}:${GID}"
     ports:
-      - 19011:8080
+      - 5011:8080
     volumes:
       - ./:/data
       - ./filebrowser:/config
@@ -278,7 +278,7 @@ services:
     volumes:
       - ./code:/config
     ports:
-      - 19012:8443
+      - 5012:8443
     restart: unless-stopped
     networks:
       - proxy
@@ -315,7 +315,7 @@ services:
   matomo:
     image: matomo
     ports:
-      - 19013:80
+      - 5013:80
     environment:
       - MATOMO_DATABASE_HOST=dbmatomo
       - MATOMO_DATABASE_TABLES_PREFIX=mat_
