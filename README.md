@@ -121,8 +121,8 @@ git clone https://github.com/senad-d/SekiTEH.git install && cd install && sudo b
 
 <img src="./Demo/analytics-sekiteh-xyz-index.png" width="250"> <img src="./Demo/dock-sekiteh-xyz.png" width="250"> <img src="./Demo/file-sekiteh-xyz-filebrowser.png" width="250">
 <img src="./Demo/monitor-sekiteh-xyz-cadvisor-exporter.png" width="250"> <img src="./Demo/speed-sekiteh-xyz.png" width="250"> <img src="./Demo/nginx-sekiteh-xyz-nginx-proxy.png" width="250"> 
-<img src="./Demo/monitor-sekiteh-xyz-node-exporter-full.png" width="250" high="250">
-<img src="./Demo/radarr-sekiteh-xyz.png" width="250" high="250"> <img src="./Demo/sonarr-sekiteh-xyz.png" width="250" high="250"> <img src="./Demo/jackett-sekiteh-xyz-UI-Dashboard.png" width="250" high="250">
+<img src="./Demo/monitor-sekiteh-xyz-node-exporter-full.png" width="250" height="250">
+<img src="./Demo/radarr-sekiteh-xyz.png" width="250" height="250"> <img src="./Demo/sonarr-sekiteh-xyz.png" width="250" height="250"> <img src="./Demo/jackett-sekiteh-xyz-UI-Dashboard.png" width="250" height="250">
 
 </p>
 </details>
