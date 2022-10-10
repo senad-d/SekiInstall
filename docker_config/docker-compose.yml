@@ -42,7 +42,7 @@ services:
     env_file: .env
     ports:
       - 80:80
-      - 9002:81
+      - 19002:81
       - 443:443
     volumes:
       - ./nginx/data:/data
@@ -85,7 +85,7 @@ services:
     image: grafana/grafana-oss:latest
     container_name: grafana
     ports:
-      - 9004:3000
+      - 19004:3000
     volumes:
       - grafana-data:/var/lib/grafana
     restart: unless-stopped
@@ -96,7 +96,7 @@ services:
     image: prom/prometheus:latest
     container_name: prometheus
     ports:
-      - 9005:9090
+      - 19005:9090
     volumes:
       - ./prometheus:/etc/prometheus
       - prometheus-data:/prometheus
@@ -138,7 +138,7 @@ services:
     image: openspeedtest/latest:latest
     container_name: openspeedtest
     ports:
-      - 9006:3000
+      - 19006:3000
     restart: unless-stopped
     networks:
       - proxy
@@ -175,7 +175,7 @@ services:
     container_name: qbittorrent
     env_file: .env
     ports:
-       - 9007:8080
+       - 19007:8080
     environment:
        - PUID=${PUID}
        - PGID=${PGID}
@@ -200,7 +200,7 @@ services:
       - ./Jackett:/config
       - ./Downloads:/downloads
     ports:
-      - 9008:9117
+      - 19008:9117
     restart: unless-stopped
     networks:
       - proxy
@@ -220,7 +220,7 @@ services:
       - ./Video/Anime/Filmovi:/anime
       - ./Downloads:/downloads
     ports:
-      - 9009:7878
+      - 19009:7878
     restart: unless-stopped
     networks:
       - proxy
@@ -250,7 +250,7 @@ services:
     container_name: filebrowser
     user: "${UID}:${GID}"
     ports:
-      - 9011:8080
+      - 19011:8080
     volumes:
       - ./:/data
       - ./filebrowser:/config
@@ -278,7 +278,7 @@ services:
     volumes:
       - ./code:/config
     ports:
-      - 9012:8443
+      - 19012:8443
     restart: unless-stopped
     networks:
       - proxy
@@ -315,7 +315,7 @@ services:
   matomo:
     image: matomo
     ports:
-      - 9013:80
+      - 19013:80
     environment:
       - MATOMO_DATABASE_HOST=dbmatomo
       - MATOMO_DATABASE_TABLES_PREFIX=mat_

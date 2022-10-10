@@ -22,19 +22,19 @@ mkdir -p /home/"${SUDO_USER:-$USER}"/docker/Video/{Filmovi,Crtani,Anime,Serije,A
 
 # Allow ports
 ufw allow 22    #SSH
-ufw allow 9001 #Portainer
-ufw allow 9002 #Nginx
-ufw allow 9003 #Homer
-ufw allow 9004 #Grafana
-ufw allow 9005 #Prometheus
-ufw allow 9006 #Speedtest
-ufw allow 9007 #Qbittorrent
-ufw allow 9008 #Jackett
-ufw allow 9009 #Radarr
-ufw allow 9010 #Sonarr
-ufw allow 9011 #Filebrowser
-ufw allow 9012 #VSCode
-ufw allow 9013 #Matomo
+ufw allow 19001 #Portainer
+ufw allow 19002 #Nginx
+ufw allow 19003 #Homer
+ufw allow 19004 #Grafana
+ufw allow 19005 #Prometheus
+ufw allow 19006 #Speedtest
+ufw allow 19007 #Qbittorrent
+ufw allow 19008 #Jackett
+ufw allow 19009 #Radarr
+ufw allow 19010 #Sonarr
+ufw allow 19011 #Filebrowser
+ufw allow 19012 #VSCode
+ufw allow 19013 #Matomo
 ufw allow 51820 #Wireguard
 
 # Create .env file
@@ -91,7 +91,7 @@ cp ./docker_config/docker-compose.yml /home/"${SUDO_USER:-$USER}"/docker/docker-
 docker-compose -f /home/"${SUDO_USER:-$USER}"/docker/docker-compose.yml --env-file /home/"${SUDO_USER:-$USER}"/docker/.env up -d
 
 # Clean up
-rm -rf /home/"${SUDO_USER:-$USER}"/.gnupg
+rm -rf /root/.gnupg
 
 cat <<EOF >> /etc/cron.d/crontask
 25 5 * * * root    docker system prune -a -f
