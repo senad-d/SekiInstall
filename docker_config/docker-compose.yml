@@ -2,7 +2,6 @@ version: '3'
 
 services:
 
-# Docker menagment 
   portainer:
     image: portainer/portainer-ce
     container_name: portainer
@@ -18,7 +17,6 @@ services:
     networks:
       - proxy
 
-# Database
   db:
     image: jc21/mariadb-aria:latest
     container_name: mariadb
@@ -35,7 +33,6 @@ services:
     networks:
       - proxy
 
-# Proxy menager
   nginx:
     image: jc21/nginx-proxy-manager:latest
     container_name: proxymanager
@@ -61,7 +58,6 @@ services:
     networks:
       - proxy
 
-# Dashboard
   dashboard:
     image: b4bz/homer
     container_name: homer
@@ -80,7 +76,6 @@ services:
     networks:
       - proxy
 
-# Monitoring 
   grafana:
     image: grafana/grafana-oss:latest
     container_name: grafana
@@ -133,7 +128,6 @@ services:
     networks:
       - proxy
 
-# Network speed test
   speedtest:
     image: openspeedtest/latest:latest
     container_name: openspeedtest
@@ -143,7 +137,6 @@ services:
     networks:
       - proxy
 
-# DDNS
   cloudflare-ddns:
     image: oznu/cloudflare-ddns:latest
     container_name: ddns-cloudflare
@@ -158,7 +151,6 @@ services:
     networks:
       - proxy
 
-# Update Docker containers
   watchtower:
     image: containrrr/watchtower
     container_name: watchtower
@@ -169,7 +161,6 @@ services:
     networks:
       - proxy
 
-# Torrent downloader
   qbittorrent:
     image: lscr.io/linuxserver/qbittorrent
     container_name: qbittorrent
@@ -187,7 +178,6 @@ services:
     networks:
       - proxy
 
-# Media torrent scrapers
   jackett:
     image: linuxserver/jackett
     container_name: jackett
@@ -244,7 +234,6 @@ services:
     networks:
       - proxy
 
-# Web Gui File Browser
   filebrowser:
     image: hurlenko/filebrowser:latest
     container_name: filebrowser
@@ -262,7 +251,6 @@ services:
     networks:
       - proxy
 
-# Web gui VSCode 
   code-server:
     image: lscr.io/linuxserver/code-server
     container_name: code-server
@@ -283,7 +271,6 @@ services:
     networks:
       - proxy
 
-# VPN
   wireguard:
     image: lscr.io/linuxserver/wireguard
     container_name: vpn
