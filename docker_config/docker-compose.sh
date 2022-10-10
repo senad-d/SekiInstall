@@ -21,20 +21,21 @@ mkdir -p /home/"${SUDO_USER:-$USER}"/docker/nginx/{mysql,data,letsencrypt}
 mkdir -p /home/"${SUDO_USER:-$USER}"/docker/Video/{Filmovi,Crtani,Anime,Serije,Anime-serije}
 
 # Allow ports
-ufw allow 5001 #Portainer
-ufw allow 5002 #Nginx
-ufw allow 5003 #Homer
-ufw allow 5004 #Grafana
-ufw allow 5005 #Prometheus
-ufw allow 5006 #Speedtest
-ufw allow 5007 #Qbittorrent
-ufw allow 5008 #Jackett
-ufw allow 5009 #Radarr
-ufw allow 5010 #Sonarr
-ufw allow 5011 #Filebrowser
-ufw allow 5012 #VSCode
-ufw allow 5013 #Matomo
+ufw allow 5101 #Portainer
+ufw allow 5102 #Nginx
+ufw allow 5103 #Homer
+ufw allow 5104 #Grafana
+ufw allow 5105 #Prometheus
+ufw allow 5106 #Speedtest
+ufw allow 5107 #Qbittorrent
+ufw allow 5108 #Jackett
+ufw allow 5109 #Radarr
+ufw allow 5110 #Sonarr
+ufw allow 5111 #Filebrowser
+ufw allow 5112 #VSCode
+ufw allow 5113 #Matomo
 ufw allow 51820 #Wireguard
+ufw enable
 
 # Create .env file
 cat <<EOF > /home/"${SUDO_USER:-$USER}"/docker/.env
