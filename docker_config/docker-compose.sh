@@ -35,7 +35,7 @@ ufw allow 5111 #Filebrowser
 ufw allow 5112 #VSCode
 ufw allow 5113 #Matomo
 ufw allow 51820 #Wireguard
-ufw enable
+ufw enable -y
 
 # Create .env file
 cat <<EOF > /home/"${SUDO_USER:-$USER}"/docker/.env

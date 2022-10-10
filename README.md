@@ -25,10 +25,21 @@ git clone https://github.com/senad-d/SekiTEH.git install && cd install && sudo b
 | Lock SSH | Lock SSH session, accept only your KEY, forbid access from root. |
 | Basic apps | Install Nano, Btop, Cron. |
 | UFW | Enable and edit rules in UFW firewall. |
-
+| Docker containers | Run docker multiple container's. |
 
 #### Bootstrap scripts to choose from
 
+<details><summary>Connecting to the server fom the domain name.</summary>
+<p>
+
+#### To be able to connect to yor home you need to do additional steps.
+  - In the router you need to port forward ports 80, 443 and 22 (or use DMZ).
+  - Buy domain name (I use namecheap.com).
+  - Create account and connect your domain name to cloudflare.com for more security.
+  - Configure NginxProxyMenager to point po the specific services and add a free SSL certificate.
+
+</p>
+</details>
 
 <details><summary>SIMPLE Install</summary>
 <p>
