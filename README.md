@@ -119,7 +119,6 @@ git clone https://github.com/senad-d/SekiTEH.git install && cd install && sudo b
 
 #### Running services sceranshots
 
-|------------|-------------|-------------|
 | <img src="./Demo/analytics-sekiteh-xyz-index.png" width="250"> | <img src="./Demo/dock-sekiteh-xyz.png" width="250"> | <img src="./Demo/file-sekiteh-xyz-filebrowser.png" width="250">|
 | <img src="./Demo/monitor-sekiteh-xyz-cadvisor-exporter.png" width="250"> | <img src="./Demo/monitor-sekiteh-xyz-node-exporter-full.png" width="250"> | <img src="./Demo/nginx-sekiteh-xyz-nginx-proxy.png" width="250"> |
 | <img src="./Demo/speed-sekiteh-xyz.png" width="250"> | | |
