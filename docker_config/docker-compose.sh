@@ -22,19 +22,19 @@ mkdir -p /home/"${SUDO_USER:-$USER}"/docker/Video/{Filmovi,Crtani,Anime,Serije,A
 
 # Allow ports
 ufw allow 22    #SSH
-ufw allow 39001 #Portainer
-ufw allow 39002 #Nginx
-ufw allow 39003 #Homer
-ufw allow 39004 #Grafana
-ufw allow 39005 #Prometheus
-ufw allow 39006 #Speedtest
-ufw allow 39007 #Qbittorrent
-ufw allow 39008 #Jackett
-ufw allow 39009 #Radarr
-ufw allow 39010 #Sonarr
-ufw allow 39011 #Filebrowser
-ufw allow 39012 #VSCode
-ufw allow 39013 #Matomo
+ufw allow 9001 #Portainer
+ufw allow 9002 #Nginx
+ufw allow 9003 #Homer
+ufw allow 9004 #Grafana
+ufw allow 9005 #Prometheus
+ufw allow 9006 #Speedtest
+ufw allow 9007 #Qbittorrent
+ufw allow 9008 #Jackett
+ufw allow 9009 #Radarr
+ufw allow 9010 #Sonarr
+ufw allow 9011 #Filebrowser
+ufw allow 9012 #VSCode
+ufw allow 9013 #Matomo
 ufw allow 51820 #Wireguard
 
 # Create .env file
