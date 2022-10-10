@@ -117,6 +117,13 @@ git clone https://github.com/senad-d/SekiTEH.git install && cd install && sudo b
 <details><summary>Warning</summary>
 <p>
 
+| col 1      | col 2      | col 3      |
+|------------|-------------|-------------|
+| <img src="./Demo/analytics-sekiteh-xyz-index.png" width="250"> | image 2 | image 3 |
+| image 1 | image 2 | image 3 |
+| image 1 | image 2 | image 3 |
+| image 1 | image 2 | image 3 |
+
 #### ⚠️ Please beware that products can change over time.
 
 I do my best to keep up with the latest changes and releases, but please understand that this won’t always be the case.
