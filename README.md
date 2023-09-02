@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/96924112/181740725-fa98c0fc-8bf5-4bef-
 
 
 ```
-git clone https://github.com/senad-d/SekiTEH.git install && cd install && sudo bash installer.sh
+git clone https://github.com/senad-d/SekiInstall.git install && cd install && sudo bash installer.sh
 ```
 
 #### Install: 
