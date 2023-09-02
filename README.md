@@ -1,5 +1,6 @@
-# Installer
-### For Ubuntu 22.04 LTS (minimized install)
+![Installer](https://github.com/senad-d/SekiInstall/assets/112484166/931e4194-d91a-4269-a9c8-a9d52c510a57)
+
+### Ubuntu 22.04 LTS (minimized install)
 
 In this short video you can see the installation process of this script for "Basic install" and OpenVPN installation with SSL certificate, user and configuration download link.
 
