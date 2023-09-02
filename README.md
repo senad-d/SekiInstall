@@ -1,4 +1,5 @@
-![Installer](https://github.com/senad-d/SekiInstall/assets/112484166/931e4194-d91a-4269-a9c8-a9d52c510a57)
+![Installer](https://github.com/senad-d/SekiInstall/assets/112484166/51b66d28-4f24-4987-9902-a2914e12692c)
+
 
 ### Ubuntu 22.04 LTS (minimized install)
 
